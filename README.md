@@ -1,3 +1,12 @@
+# $${\color{red} \textbf{Project}: \textbf{Student} \ \textbf{App}}$$
+
+## $\color{green} \textbf{Prerequisite:}$
+- Java
+- Git
+- Maven
+- Mysql
+- Tomcat
+
 ### $\color{blue} \textbf{Create \ Database \ In \ RDS  }$
 - Go To RDS
 - Created Database
