@@ -1,0 +1,155 @@
+    2  yum install git
+    3  yum install maven
+    4  sudo wget https://dev.mysql.com/get/mysql80-community-release-el7-5.noarch.rpm
+    5  sudo rpm -ivh mysql80-community-release-el7-5.noarch.rpm
+    6  sudo yum install mysql-server -y
+    7  cd /etc/yum.repos.d/
+    8  ls
+    9  nano mysql-community.repo 
+   10  lscd
+   11  cd
+   12  sudo yum install mysql-server -y
+   13  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.104/bin/apache-tomcat-9.0.104.zip
+   14  ls
+   15  git --version
+   16  java --version
+   17  ls
+   18  unzip apache-tomcat-9.0.104.zip 
+   19  ls
+   20   git clone https://github.com/Pritam-Khergade/student-ui.git
+   21  ls
+   22  mysql -h mysql.c4jakuwcsmxt.us-east-1.rds.amazonaws.com -u admin -p
+   23  ls
+   24  cd apache-tomcat-9.0.104/
+   25  ls
+   26  lws
+   27  ls
+   28  cd lib/
+   29  wget https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
+   30  ls
+   31  cd ..
+   32  cd conf/
+   33  ls
+   34  nana context.xml 
+   35  nano context.xml 
+   36  vim context.xml 
+   37  cd ..
+   38  cd bin/
+   39  ls
+   40  bash catalina.sh start
+   41  cd
+   42  ls
+   43  cd student-ui/
+   44  ls
+   45  mvn clean package 
+   46  ls
+   47  cd target/
+   48  ls
+   49  cd
+   50  cd student-ui/target/
+   51  ;s
+   52  ls
+   53  cp -r studentapp-2.2-SNAPSHOT /root/apache-tomcat-9.0.104/webapps/
+   54  cd 
+   55  cd apache-tomcat-9.0.104/webapps/
+   56  ls
+   57  cd ..
+   58  cd bin/
+   59  bash catalina.sh stop
+   60  bash catalina.sh start
+   61  cd ..
+   62  cd conf/
+   63  ls
+   64  vim context.xml 
+   65  cd ..
+   66  cd bin/
+   67  bash catalina.sh stop
+   68  bash catalina.sh start
+   69  cd ..
+   70  cd conf/
+   71  nano context.xml 
+   72  vim context.xml 
+   73  cd
+   74  mysql -h mysql.c4jakuwcsmxt.us-east-1.rds.amazonaws.com -u admin -p
+   75* cd apache-tomcat-9.0.104/bin/s
+   76  bash catalina.sh stop
+   77  bash catalina.sh start
+   78  cd
+   79  cd student-ui/
+   80  ls
+   81  rm -rvf target/
+   82  mvn clean package 
+   83  ls
+   84  target/
+   85  ls
+   86  cd target/
+   87  ls
+   88  cp studentapp-2.2-SNAPSHOT.war /root/apache-tomcat-9.0.104/webapps/
+   89  cd
+   90  cd apache-tomcat-9.0.104/
+   91  ls
+   92  cd bin/
+   93  ls
+   94  bash catalina.sh stop
+   95  bash catalina.sh start
+   96  cd
+   97  mysql -h mysql.c4jakuwcsmxt.us-east-1.rds.amazonaws.com -u admin -p
+   98  cd apache-tomcat-9.0.104/conf/
+   99  vim context.xml 
+  100  cd ..
+  101  cd bin/
+  102  bash catalina.sh stop
+  103  bash catalina.sh start
+  104  cd
+  105  ls
+  106  rm -rvf apache-tomcat-9.0.104
+  107  ls
+  108  rm -rvf student-ui/
+  109  unzip apache-tomcat-9.0.104.zip 
+  110   git clone https://github.com/Pritam-Khergade/student-ui.git
+  111  ls
+  112  cd apache-tomcat-9.0.90.tar.gz/lib
+  113  ls
+  114  cd apache-tomcat-9.0.104/lib/
+  115  wget https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
+  116  cd ..
+  117  cd conf/
+  118  vim context.xml 
+  119  cd ../bin
+  120  bash catalina.sh start
+  121  cd
+  122  cd student-ui
+  123  ls
+  124  mvn clean package
+  125  cd
+  126   rm -rvf student-ui/
+  127  ls
+  128  git clone https://github.com/Pritam-Khergade/student-ui.git
+  129  cd student-ui/
+  130  cd
+  131  cd apache-tomcat-9.0.104/lib/
+  132  ls
+  133  cd
+  134  cd student-ui/
+  135  mvn clean package
+  136  cd
+  137  cp /root/student-ui/target/studentapp-2.2-SNAPSHOT /root/apache-tomcat-9.0.90/webapps
+  138  cp -r /root/student-ui/target/studentapp-2.2-SNAPSHOT /root/apache-tomcat-9.0.90/webapps
+  139  ls
+  140  cd student-ui/target/
+  141  ls
+  142  cp studentapp-2.2-SNAPSHOT /root/apache-tomcat-9.0.104/webapps/
+  143  cd
+  144  cd apache-tomcat-9.0.104/webapps/
+  145  ls
+  146  cd
+  147  cd student-ui/target/
+  148  cp -r studentapp-2.2-SNAPSHOT /root/apache-tomcat-9.0.104/webapps/
+  149  cd
+  150  cd apache-tomcat-9.0.90/bin
+  151  cd apache-tomcat-9.0.104/bin/
+  152  cd bash catalina.sh stop
+  153  bash catalina.sh stop
+  154  bash catalina.sh start
+  155  cd
+  156  history 
